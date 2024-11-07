@@ -1,0 +1,20 @@
+Historia de Usuario
+Como: cliente
+Quiero: introducir una cadena de números con diferentes delimitadores
+Para: que la calculadora me devuelva la suma de esos números, ignorando los números mayores a 1000 y respetando los delimitadores personalizados.
+
+Criterios de Confirmación:
+
+-Sumar números separados por comas:
+    Ejemplo: "1,2,4,8" debe retornar 15.
+-Usar el guion como delimitador adicional:
+    Ejemplo: "1-2,3" debe retornar 6.
+-Especificación de delimitador:
+    Ejemplo: "//[;] 6;7;4" debe retornar 17.
+    Ejemplo: "//[;] 6,3-2;1" debe retornar 12.
+-Ignorar números mayores a 1000:
+    Ejemplo: "2, 1001" debe retornar 2.
+-Delimitadores de longitud variable:
+    Ejemplo: "//[***] 1***2***3" debe retornar 6.
+-Múltiples delimitadores:
+    Ejemplo: "//[*][%] 1*2%3,7-9" debe retornar 22.
