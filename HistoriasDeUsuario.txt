@@ -1,4 +1,5 @@
 Historia de Usuario
+
 Como: cliente
 Quiero: introducir una cadena de números con diferentes delimitadores
 Para: que la calculadora me devuelva la suma de esos números, ignorando los números mayores a 1000 y respetando los delimitadores personalizados.
