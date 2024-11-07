@@ -2,7 +2,7 @@ import {sumar}  from "./calculadora.js";
 
 const form = document.querySelector("#sumar-form");
 const div = document.querySelector("#resultado-div");
-const cadena=document.getElementById("#cadena");
+const cadena=document.querySelector("#cadena");
 
 
 
@@ -12,5 +12,5 @@ form.addEventListener("submit", (event) => {
   const inputValue = cadena.value;
   const resultado = sumar(inputValue);
 
-  div.innerHTML = "<p>Resultado" + resultado + "</p>";
+  div.innerHTML = `<p>Resultado: ${resultado}</p>`;
 });
